@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
     private var currentDessert = allDesserts[0]
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        dessertTimer = DessertTimer()
+        dessertTimer = DessertTimer(this.lifecycle)
         super.onCreate(savedInstanceState)
         Timber.i("onCreate called")
 
