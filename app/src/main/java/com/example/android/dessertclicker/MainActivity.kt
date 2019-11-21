@@ -75,7 +75,8 @@ class MainActivity : AppCompatActivity() {
             showCurrentDessert()
         }
         if (savedInstanceState != null) {
-            revenue = savedInstanceState.getInt(KEY_REVENUE, 0)dessertsSold = savedInstanceState.getInt(KEY_DESSERT_SOLD, 0)
+            revenue = savedInstanceState.getInt(KEY_REVENUE, 0)
+            dessertsSold = savedInstanceState.getInt(KEY_DESSERT_SOLD, 0)
             dessertTimer.secondsCount =
                     savedInstanceState.getInt(KEY_TIMER_SECONDS, 0)
         }
